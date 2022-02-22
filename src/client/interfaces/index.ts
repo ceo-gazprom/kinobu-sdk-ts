@@ -1,0 +1,1 @@
+export type { IClientService } from './client.service.interface';

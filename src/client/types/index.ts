@@ -1,0 +1,1 @@
+export type { AllowMethods } from './allow-request-methods.type';
