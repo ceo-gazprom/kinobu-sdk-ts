@@ -1,5 +1,5 @@
 {
-  "name": "kinobu-sdk-ts",
+  "name": "@kinobu/sdk-ts",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,10 +9,13 @@
     "sdk",
     "typescript"
   ],
-  "repository": "https://github.com/yuwacker/kinobu-sdk-ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuwacker/kinobu-sdk-ts.git"
+  },
   "author": "Robert Wacker",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
@@ -28,5 +31,13 @@
   },
   "dependencies": {
     "axios": "^0.26.0"
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/yuwacker/kinobu-sdk-ts/issues"
+  },
+  "homepage": "https://github.com/yuwacker/kinobu-sdk-ts#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

@@ -1,6 +1,6 @@
 export interface IClientService {
-  get<Resposne>(): Promise<Response>
-  post<Response>(): Promise<Response>
-  delete<Response>(): Promise<Response>
-  patch<Response>(): Promise<Response>
+  get<Response>(endpoint: string): Promise<Response>;
+  post<Response>(endpoint: string): Promise<Response>;
+  delete<Response>(endpoint: string): Promise<Response>;
+  patch<Response>(endpoint: string): Promise<Response>;
 }
