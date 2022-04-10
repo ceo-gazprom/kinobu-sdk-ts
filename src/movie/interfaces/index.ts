@@ -1,0 +1,1 @@
+export type { IMovie } from './movie.interface';

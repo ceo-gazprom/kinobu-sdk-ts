@@ -11,7 +11,6 @@ export class AccountService {
 
   public async signIn(signInAccountData: ISignInAccountDto): ISignInAccountResponse {
     const result = this.clientService.post('v1/account/signin', signInAccountData);
-    if
   }
 
   public signUp(signUpAccountData: ISignUpAccountDto): IAccount {

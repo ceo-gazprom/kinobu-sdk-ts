@@ -1,8 +1,11 @@
 {
   "name": "@kinobu/sdk-ts",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.2",
+  "description": "Kinobu SDK for TypeScript",
+  "author": "Kinobu ltd",
+  "license": "MIT",
+  "main": "dist/node/index.js",
+  "typings": "./types/index.d.ts",
   "keywords": [
     "kinobu",
     "api",
@@ -13,8 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/yuwacker/kinobu-sdk-ts.git"
   },
-  "author": "Robert Wacker",
-  "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
@@ -31,13 +32,14 @@
   "dependencies": {
     "axios": "^0.26.0"
   },
-  "description": "",
   "bugs": {
     "url": "https://github.com/yuwacker/kinobu-sdk-ts/issues"
   },
   "homepage": "https://github.com/yuwacker/kinobu-sdk-ts#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project tsconfig.production.json",
+    "build:types": "tsc --project tsconfig.production.types.json",
+    "build:clean": "rimraf build",
     "bump": "npm version patch | npm publish --access public"
   }
 }

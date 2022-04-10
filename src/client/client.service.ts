@@ -33,17 +33,17 @@ export class ClientService implements IClientService {
     return result.data;
   }
 
-  public async post(endpoint: string, body): Promise<> {
-    return this.request(url, 'POST')
-  }
+  // public async post(endpoint: string, body): any {
+  //   return this.request(url, 'POST')
+  // }
 
-  public delete(endpoint: string): Promise<> {
-    return this.axios.delete()
-  }
+  // public delete(endpoint: string): Promise<> {
+  //   return this.axios.delete()
+  // }
   
-  public patch(
-    endpoint: string
-  ) {
-    return this.axios.patch()
-  }
+  // public patch(
+  //   endpoint: string
+  // ) {
+  //   return this.axios.patch()
+  // }
 }
